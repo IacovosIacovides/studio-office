@@ -1,4 +1,6 @@
 :root {
+    --animate-duration: 2s;
+    --animate-delay: 1s;
     --red-color-2: #f00075;
     --red-color-3: #c2080f;
     --red-color-4: #ff0000;
@@ -454,7 +456,7 @@ button { border: none; outline: none; box-shadow: none; background: none; }
 .homepage-v9-slider-slicknavholdercustom::after { content: ""; position: absolute; bottom: -61px; right: -61px; width: 143px; height: 143px; background-color: var(--white-dark-color-6); border-radius: 100px; z-index: -1; }
 .homepage-v9-slider-slicknavbtnbig { position: relative; cursor: pointer; background: none; margin: 0; padding: 35px 0 0 60px; font-size: 20px; font-weight: 500; color: var(--white-color); -webkit-transition: all 240ms ease-in-out; -moz-transition: all 240ms ease-in-out; -ms-transition: all 240ms ease-in-out; -o-transition: all 240ms ease-in-out; transition: all 240ms ease-in-out; }
 .homepage-v9-slider-slicknavbtnprev { margin-right: 50px; }
-.homepage-v9-slider-slicknavbtnbig span { position: relative; display: block; -webkit-transition: all 240ms ease-in-out; -moz-transition: all 240ms ease-in-out; -ms-transition: all 240ms ease-in-out; -o-transition: all 240ms ease-in-out; transition: all 240ms ease-in-out; }
+.homepage-v9-slider-slicknavbtnbig span { font-size: larger; position: relative; display: block; -webkit-transition: all 240ms ease-in-out; -moz-transition: all 240ms ease-in-out; -ms-transition: all 240ms ease-in-out; -o-transition: all 240ms ease-in-out; transition: all 240ms ease-in-out; }
 .homepage-v9-slider-slicknavbtnprev span { padding-left: 25px; }
 .homepage-v9-slider-slicknavbtnprev span::after { content: ""; position: absolute; left: 0; top: 0; background-color: var(--white-color); width: 16px; height: 1px; bottom: 0; margin: auto 0; -webkit-transition: all 240ms ease-in-out; -moz-transition: all 240ms ease-in-out; -ms-transition: all 240ms ease-in-out; -o-transition: all 240ms ease-in-out; transition: all 240ms ease-in-out; }
 .homepage-v9-slider-slicknavbtnnext span { padding-right: 25px; }
@@ -724,14 +726,14 @@ button { border: none; outline: none; box-shadow: none; background: none; }
 .footer-menu-9 { margin: 21px 0 0 0; padding: 0; }
 .footer-menu-9 li { display: block; margin: 0; padding: 0; }
 .footer-menu-9 .nav-link { font-size: 14px; font-weight: 400; color: var(--white-color); margin: 0; padding: 0; line-height: 36px; font-family: 'Open Sans', sans-serif; }
-.footer-menu-9 .nav-link:focus, .footer-menu-9 .nav-link:hover { color: var(--green-color-3); }
+.footer-menu-9 .nav-link:focus, .footer-menu-9 .nav-link:hover { color: white; }
 .footer-menu-9 .nav-link .fas { font-size: 14px; color: var(--white-color); line-height: 36px; margin: 0 10px 0 0; }
 .footer-menu-9 .nav-link:focus .fas, .footer-menu-9 .nav-link:hover .fas { color: var(--green-color-3); }
 .footer-store-information-9 { margin: 31px 0 0 0; padding: 0; }
 .footer-store-information-9 li { display: block; margin: 0; padding: 0; }
 .footer-store-information-9 .nav-link { display: flex; align-items: center; font-size: 14px; font-weight: 400; color: var(--white-color); margin: 0 0 24px 0; padding: 0; line-height: normal; font-family: 'Open Sans', sans-serif; }
 .footer-store-information-9 .nav-link-m-b-0 { margin: 0; }
-.footer-store-information-9 .nav-link:focus, .footer-store-information-9 .nav-link:hover { color: var(--green-color-3); }
+.footer-store-information-9 .nav-link:focus, .footer-store-information-9 .nav-link:hover { color: white; }
 .footer-store-information-9 .nav-link .fas { font-size: 22px; color: var(--green-color-3); margin: 0 8px 0 0; }
 .footer-social-media-9 { margin: 0 auto; padding: 0; text-align: center; }
 .footer-social-media-9 .nav-link { display: inline-flex; margin: 0 5px; padding: 0; background-color: var(--green-color-3); width: 46px; height: 46px; border-radius: 0px; text-align: center; justify-content: center; align-items: center; -webkit-transition: all 240ms ease-in-out; -moz-transition: all 240ms ease-in-out; -ms-transition: all 240ms ease-in-out; -o-transition: all 240ms ease-in-out; transition: all 240ms ease-in-out; }
