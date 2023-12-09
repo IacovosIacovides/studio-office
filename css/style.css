@@ -446,6 +446,9 @@ button { border: none; outline: none; box-shadow: none; background: none; }
 .homev9-nav-link { color: var(--black-color-22) !important; font-size: 18px; font-weight: 500; border-bottom: 1px solid; border-color: transparent; padding: 14px 21px !important; margin-top: -1px; }
 .homev9-nav-link.active, .homev9-nav-link:hover { color: var(--black-color-22) !important; }
 .homev9-nav-link.show .fa-angle-down { transform: rotate(180deg); }
+.homev9-nav-link:hover{
+    color: #1561b7 !important;
+}
 .homev9-nav-link.dropdown-toggle::after { display: none; }
 .header-v9-navbar-right-desktop { margin: 0 48px 0 0; }
 .homev9-search .homev9-nav-link-rightside { line-height: 1.2; position: relative; font-size: 16px; padding: 0px !important; text-align: center; }
@@ -563,6 +566,9 @@ button { border: none; outline: none; box-shadow: none; background: none; }
 .homepage-v9-slider-socialMain-text:last-child:after { display: none; }
 .homepage-v9-slider-socialMain-name { color: var(--black-color-22); }
 .homepage-v9-slider-socialMain-name:hover, .homepage-v9-slider-socialMain-name:focus { color: var(--green-color-3); }
+.homepage-v9-slider-socialMain-name{
+    rotate: 180deg;
+}
 
 /*------------------------------ Home Page v9 Recently Added Product CSS --------------------------------*/
 .recently-added-product { position: relative; display: flex; flex-direction: column; min-width: 0; word-wrap: break-word; background-color: var(--white-color); background-clip: border-box; border: none; border-radius: 0; }
