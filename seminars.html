@@ -170,7 +170,9 @@
                         <ol class="breadcrumb aboutpage-v2-innerpage-breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html" class="link-active">Home</a></li>
                             <li class="breadcrumb-item"><a href="about.html" class="link-active">About Us</a></li>
-                            <li class="breadcrumb-item active"><a href="products.html" class="link-active">Products</a></li>
+                            <li class="breadcrumb-item "><a href="products.html" class="link-active">Products</a></li>
+                            <li class="breadcrumb-item "><a href="chairs.html" class="link-active">Chairs</a></li>
+                            <li class="breadcrumb-item active"><a href="seminars.html" class="link-active">Seminars</a></li>
                         </ol>
                     </div>
                 </div>
@@ -193,8 +195,16 @@
             <div class="toolbox-right"> 
             </div>
         </div>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">Remove Filtering</button>
+            <button class="btn" onclick="filterSelection('interstuhl')"> Interstuhl</button>
+            <button class="btn" onclick="filterSelection('wilkhahn')"> Wilkhahn</button>
+            <button class="btn" onclick="filterSelection('las')"> Las</button>
+            <button class="btn" onclick="filterSelection('herman')"> Herman Miller</button>
+            <button class="btn" onclick="filterSelection('studio')"> Studio Office</button>
+          </div>
         <div class="row m-b-36">
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv interstuhl">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -207,7 +217,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv las">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -220,7 +230,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv herman">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -233,7 +243,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv las">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -246,7 +256,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -259,7 +269,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -272,7 +282,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -285,7 +295,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -298,7 +308,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -311,7 +321,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -324,7 +334,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -337,8 +347,318 @@
                     </div>
                 </div>
             </div>
-            
-          
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="fila.html"><img src="assets27/fila.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="fila.html">Fila</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="mobby.html"><img src="assets27/mobby.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="mobby.html">Mobby</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="ch077.html"><img src="assets27/ch077.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="ch077.html">CH-077</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="replayseminars.html"><img src="assets27/replay.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="replayseminars.html">Replay</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv las">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="f04.html"><img src="assets27/f04.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="f04.html">F04</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="windseminars.html"><img src="assets27/wind.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="windseminars.html">Wind</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv las">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="f03.html"><img src="assets27/f03.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="f03.html">F03</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv las">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="f02.html"><img src="assets27/f02.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="f02.html">F02</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv interstuhl">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="snike.html"><img src="assets27/snike.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="snike.html">SNIKEis1</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv interstuhl">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="curve.html"><img src="assets27/curve.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="curve.html">CURVEis1</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv wilkhahn">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="aula.html"><img src="assets27/aula.jpeg" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="aula.html">Aula</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv wilkhahn">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="metrik.html"><img src="assets27/metrik.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="metrik.html">Metrik</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv herman">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="caperseminars.html"><img src="assets27/caper.jpeg" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="caperseminars.html">Caper</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="ch245c.html"><img src="assets27/ch254.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="ch245c.html">CH-245C</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="movie.html"><img src="assets27/movie.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="movie.html">Movie</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="net.html"><img src="assets28/net.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="net.html">Net</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lagenda.html"><img src="assets28/net.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lagenda.html">Lagenda</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="bridget.html"><img src="assets28/bridget.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="bridget.html">Bridget</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="starseminars.html"><img src="assets28/star.jpeg" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="starseminars.html">Star 500</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv interstuhl">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="vlegis3.html"><img src="assets28/vleg.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="vlegis3.html">VLEGis3</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv wilkhahn">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="alineseminars.html"><img src="assets28/aline.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="alineseminars.html">Aline</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv herman">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="keynseminars.html"><img src="assets28/keyn.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="keynseminars.html">Keyn</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv herman">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="limerick.html"><img src="assets28/limerick.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="limerick.html">Limerick</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv las">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="f01.html"><img src="assets28/f01.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="f01.html">F01</a></h4>
+                    </div>
+                </div>
+            </div>
         </div>
         
 
@@ -346,7 +666,7 @@
             </div>
         </div>
     </div>
-    <nav aria-label="Page navigation example" style="display: flex; justify-content: center;">
+    <!-- <nav aria-label="Page navigation example" style="display: flex; justify-content: center;">
         <ul class="pagination">
           <li class="page-item">
             <a class="page-link" href="seminars4.html" aria-label="Previous" style="font-size: 18px; font-weight: bold;">
@@ -365,7 +685,7 @@
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
 </section>
 <!-- Stores Listing Page Vendor -->
 
@@ -519,6 +839,7 @@
         <!-- HomePage v9 Back To Top Button -->
         
         <!-- Jquery JS -->
+        <!-- Jquery JS -->
         <script src="js/jquery-3.6.0.min.js"></script>
         <!-- Bootstrap Bundle JS -->
         <script src="js/bootstrap.bundle.min.js"></script>
@@ -532,5 +853,48 @@
         <script src="js/jquery.fancybox.min.js"></script>        
         <!-- Regalia JS -->
         <script src="js/regalia.js"></script>
+        <script>
+            filterSelection("all");
+        
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("filterDiv");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    if (c === "" || x[i].className.indexOf(c) > -1) {
+                        x[i].style.display = "block";
+                    } else {
+                        x[i].style.display = "none";
+                    }
+                }
+        
+                // Remove the "active" class from all buttons
+                var btns = document.getElementsByClassName("btn");
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].classList.remove("active");
+                }
+        
+                // Add the "active" class to the clicked button
+                var currentButton = document.querySelector('.btn[data-filter="' + c + '"]');
+                if (currentButton) {
+                    currentButton.classList.add("active");
+                }
+            }
+        
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    current[0].classList.remove("active");
+                    this.classList.add("active");
+        
+                    // Get the value of the "data-filter" attribute and pass it to filterSelection
+                    var filterValue = this.getAttribute("data-filter");
+                    filterSelection(filterValue);
+                });
+            }
+        </script>
     </body>
 </html>

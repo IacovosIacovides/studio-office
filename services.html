@@ -440,6 +440,7 @@
         <!-- HomePage v9 Back To Top Button -->
         
         <!-- Jquery JS -->
+        <!-- Jquery JS -->
         <script src="js/jquery-3.6.0.min.js"></script>
         <!-- Bootstrap Bundle JS -->
         <script src="js/bootstrap.bundle.min.js"></script>
@@ -453,5 +454,48 @@
         <script src="js/jquery.fancybox.min.js"></script>        
         <!-- Regalia JS -->
         <script src="js/regalia.js"></script>
+        <script>
+            filterSelection("all");
+        
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("filterDiv");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    if (c === "" || x[i].className.indexOf(c) > -1) {
+                        x[i].style.display = "block";
+                    } else {
+                        x[i].style.display = "none";
+                    }
+                }
+        
+                // Remove the "active" class from all buttons
+                var btns = document.getElementsByClassName("btn");
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].classList.remove("active");
+                }
+        
+                // Add the "active" class to the clicked button
+                var currentButton = document.querySelector('.btn[data-filter="' + c + '"]');
+                if (currentButton) {
+                    currentButton.classList.add("active");
+                }
+            }
+        
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    current[0].classList.remove("active");
+                    this.classList.add("active");
+        
+                    // Get the value of the "data-filter" attribute and pass it to filterSelection
+                    var filterValue = this.getAttribute("data-filter");
+                    filterSelection(filterValue);
+                });
+            }
+        </script>
     </body>
 </html>

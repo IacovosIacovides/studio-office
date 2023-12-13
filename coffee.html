@@ -170,7 +170,10 @@
                         <ol class="breadcrumb aboutpage-v2-innerpage-breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html" class="link-active">Home</a></li>
                             <li class="breadcrumb-item"><a href="about.html" class="link-active">About Us</a></li>
-                            <li class="breadcrumb-item active"><a href="products.html" class="link-active">Products</a></li>
+                            <li class="breadcrumb-item"><a href="products.html" class="link-active">Products</a></li>
+                            <li class="breadcrumb-item"><a href="chairs.html" class="link-active">Chairs</a></li>
+                            <li class="breadcrumb-item"><a href="sofascoffee.html" class="link-active">Sofas and Coffe table</a></li>
+                            <li class="breadcrumb-item active"><a href="coffee.html" class="link-active">Coffee</a></li>
                         </ol>
                     </div>
                 </div>
@@ -193,8 +196,13 @@
             <div class="toolbox-right"> 
             </div>
         </div>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">Remove Filtering</button>
+            <button class="btn" onclick="filterSelection('las')"> Las</button>
+            <button class="btn" onclick="filterSelection('studio')"> Studio Office</button>
+          </div>
         <div class="row m-b-36">
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv las">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -207,7 +215,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv las">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -220,7 +228,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv las">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -233,7 +241,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv las">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -246,7 +254,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv las">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -259,7 +267,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv las">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -272,7 +280,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv las">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -285,7 +293,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -298,7 +306,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -311,7 +319,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -321,6 +329,320 @@
                     <div class="stores-listing-page-store-content">
                         <h4 class="stores-listing-page-store-title">
                             <a href="y017.html">Y017</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="y016.html"><img src="assets32/y016.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="y016.html">YO16</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="y09.html"><img src="assets32/y09.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="y09.html">Y09</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="y05.html"><img src="assets32/y05.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="y05.html">Y05</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="y03-y04.html"><img src="assets32/y03-y04.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="y03-y04.html">Y03 - Y04</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="y01-y02.html"><img src="assets32/y01-y02.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="y01-y02.html">Y01 - Y02</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc035.html"><img src="assets32/lc053.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc035.html">LC-035</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc052.html"><img src="assets32/lc052.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc052.html">LC-052</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc038.html"><img src="assets32/lc038.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc038.html">LC-038</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc032.html"><img src="assets32/lc032.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc032.html">LC-032</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc031.html"><img src="assets32/lc031.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc031.html">LC-031</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc028.html"><img src="assets32/lc028.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc028.html">LC-028</a></h4>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc027.html"><img src="assets32/lc027.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc027.html">LC-027</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc026.html"><img src="assets32/y016.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc026.html">LC-026</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc025.html"><img src="assets32/y09.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc025.html">LC-025</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc021.html"><img src="assets32/y05.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc021.html">LC-021</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc020.html"><img src="assets32/y03-y04.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc020.html">LC-020</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc019.html"><img src="assets32/y01-y02.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc019.html">LC-019</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc014.html"><img src="assets32/lc053.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc014.html">LC-014</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc011.html"><img src="assets32/lc052.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc011.html">LC-011</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc010.html"><img src="assets32/lc038.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc010.html">LC-010</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc009.html"><img src="assets32/lc032.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc009.html">LC-009</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc008.html"><img src="assets32/lc031.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc008.html">LC-008</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc007.html"><img src="assets32/lc028.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc007.html">LC-007</a></h4>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+                <div class="store stores-listing-page-store-grid">
+                    <div class="stores-listing-page-store-header">
+                        <figure class="stores-listing-page-store-banner">
+                            <a href="lc006.html"><img src="assets32/lc027.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                        </figure>
+                    </div>
+                    <div class="stores-listing-page-store-content">
+                        <h4 class="stores-listing-page-store-title">
+                            <a href="lc006.html">LC-006</a></h4>
                     </div>
                 </div>
             </div>
@@ -505,6 +827,7 @@
         <!-- HomePage v9 Back To Top Button -->
         
         <!-- Jquery JS -->
+        <!-- Jquery JS -->
         <script src="js/jquery-3.6.0.min.js"></script>
         <!-- Bootstrap Bundle JS -->
         <script src="js/bootstrap.bundle.min.js"></script>
@@ -518,5 +841,48 @@
         <script src="js/jquery.fancybox.min.js"></script>        
         <!-- Regalia JS -->
         <script src="js/regalia.js"></script>
+        <script>
+            filterSelection("all");
+        
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("filterDiv");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    if (c === "" || x[i].className.indexOf(c) > -1) {
+                        x[i].style.display = "block";
+                    } else {
+                        x[i].style.display = "none";
+                    }
+                }
+        
+                // Remove the "active" class from all buttons
+                var btns = document.getElementsByClassName("btn");
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].classList.remove("active");
+                }
+        
+                // Add the "active" class to the clicked button
+                var currentButton = document.querySelector('.btn[data-filter="' + c + '"]');
+                if (currentButton) {
+                    currentButton.classList.add("active");
+                }
+            }
+        
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    current[0].classList.remove("active");
+                    this.classList.add("active");
+        
+                    // Get the value of the "data-filter" attribute and pass it to filterSelection
+                    var filterValue = this.getAttribute("data-filter");
+                    filterSelection(filterValue);
+                });
+            }
+        </script>
     </body>
 </html>
