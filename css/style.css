@@ -192,6 +192,650 @@ button { border: none; outline: none; box-shadow: none; background: none; }
     .w-xxl-auto { width: auto !important; }
 }
 
+
+/* IDEA 3 */
+/* General Variables */
+:root {
+    --main-font: Montserrat, sans-serif;
+    --content-font: Roboto, sans-serif;
+    --h3-font: 'Kaushan Script', cursive;
+    --main-color: #fff;
+    --icon-color: #95e1d3;
+    height: 80vh;
+  }
+  
+.header-wrapper{
+    margin-top: -100px;
+}
+
+  /* General Styles */
+.carh1 {
+    margin-top: 15%;
+    font-family: var(--main-font);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .bg-wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  }
+  .section-header {
+    padding-top: 5.625em;
+    text-align: center;
+  }
+  .section-header h3 {
+    margin-bottom: 0.5em;
+  }
+  .section-header .line-red {
+    margin: 2.5em auto 2.9375em auto;
+  }
+  .line-red {
+    display: block;
+    width: 4em;
+    height: 0.1875em;
+    margin: 0 auto;
+    background: #f38181;
+  }
+  
+  /* Main Header Styles */
+  .main-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family: var(--main-font);
+    color: var(--main-color);
+    background: transparent;
+  }
+  .main-header .header-wrapper {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 1em;
+  }
+  .main-header .header-wrapper .main-logo {
+    float: left;
+    font-weight: 700;
+    font-size: 1.875em;
+  }
+  .main-header .header-wrapper .main-menu {
+    float: right;
+    text-align: center;
+  }
+  .main-header .header-wrapper .main-menu li {
+    display: inline-block;
+    padding: 0.75em 1.875em;
+  }
+  .main-header .header-wrapper .main-menu li a {
+    padding-bottom: 0.75em;
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-size: 0.875em;
+  }
+  .main-header .header-wrapper .main-menu li a:hover {
+    color: #fce38a;
+    border-bottom: 0.1875em solid #fce38a;
+    transition: 0.1s;
+  }
+  .main-header .header-wrapper .main-menu li a span {
+    font-size: 1.2em;
+  }
+  
+  /* Section-1 Styles */
+  #section-1 {
+    height: 38em;
+    color: var(--main-color);
+    background-color: #222;
+  }
+  #section-1 .content-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  #section-1 .content-slider input {
+    display: none;
+  }
+  #section-1 .content-slider .slider {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+  }
+  #section-1 .content-slider .slider .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: all 0.5s ease;
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper {
+    height: 100%;
+    padding-top: 6em;
+    background-image: linear-gradient(rgba(5, 22, 24, 0.364), rgba(50, 204, 255, 0.441));
+    box-sizing: border-box;
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
+    padding-bottom: 0.3em;
+    font-family: var(--h3-font);
+    font-weight: 400;
+    font-size: 2.5em;
+    text-transform: none;
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper h1 {
+    font-size: 6em;
+    line-height: 95%;
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper .line {
+    display: block;
+    width: 4em;
+    height: 0.1875em;
+    margin: 2.5em auto;
+    background: var(--main-color);
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper .learn-more-button {
+    padding-bottom: 5em;
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper a {
+    padding: 0.5em 2em;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 0.875em;
+    color: var(--main-color);
+    text-transform: uppercase;
+    border: 0.1875em solid var(--main-color);
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper a:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+    transition: 0.3s;
+  }
+  
+  #section-1 #top-banner-1 {
+    background: url("/assets/hero1.png") no-repeat center center;
+    background-size: cover;
+  }
+  #section-1 #top-banner-2 {
+    background: url("/assets/hero2.png") no-repeat center center;
+    background-size: cover;
+  }
+  #section-1 #top-banner-3 {
+    background: url("/assets/hero3.png") no-repeat center center;
+    background-size: cover;
+  }
+  #section-1 #top-banner-4 {
+    background: url("/assets/hero4.png") no-repeat center center;
+    background-size: cover;
+  }
+  
+  #section-1 .content-slider nav {
+    position: absolute;
+    bottom: 0.5em;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+  }
+  #section-1 .content-slider nav .controls {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    font-family: var(--main-font);
+    color: var(--main-color);
+  }
+  #section-1 .content-slider nav .controls label {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    height: 3.1em;
+    overflow: hidden;
+    margin: 0 1em;
+    padding-top: 1em;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    font-size: 1em;
+    color: #ffffff;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  #section-1 .content-slider nav .controls label .progressbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ffffff;
+    z-index: 100;
+  }
+  #section-1 .content-slider nav .controls label .progressbar .progressbar-fill {
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    margin-left: -100%;
+    background: #062fb7;
+  }
+  #section-1 .content-slider nav .controls label span {
+    font-size: 1.4em;
+    font-weight: 700;
+  }
+  #section-1 .content-slider nav .controls label:hover {
+    color: #e88382;
+  }
+  #section-1 .content-slider nav .controls label.checked {
+    cursor: default;
+    color: var(--main-color);
+    transition: all 0.5s;
+  }
+  #section-1 .content-slider nav .controls label.checked .progressbar {
+    background: var(--main-color);
+  }
+  #section-1 .content-slider nav .controls label.checked .progressbar-fill {
+    animation: progressBarFill 5s linear;
+  }
+  
+  #section-1 #banner1:checked ~ .slider #top-banner-1,
+  #section-1 #banner2:checked ~ .slider #top-banner-2,
+  #section-1 #banner3:checked ~ .slider #top-banner-3,
+  #section-1 #banner4:checked ~ .slider #top-banner-4 {
+    opacity: 1;
+    z-index: 1;
+  }
+  #section-1 #banner1:checked ~ nav label:nth-of-type(1),
+  #section-1 #banner2:checked ~ nav label:nth-of-type(2),
+  #section-1 #banner3:checked ~ nav label:nth-of-type(3),
+  #section-1 #banner4:checked ~ nav label:nth-of-type(4) {
+    cursor: default;
+    color: var(--main-color);
+    transition: all 0.5s;
+  }
+  #section-1 #banner1:checked ~ nav label:nth-of-type(1) .progressbar,
+  #section-1 #banner2:checked ~ nav label:nth-of-type(2) .progressbar,
+  #section-1 #banner3:checked ~ nav label:nth-of-type(3) .progressbar,
+  #section-1 #banner4:checked ~ nav label:nth-of-type(4) .progressbar {
+    background: var(--main-color);
+  }
+  #section-1 #banner1:checked ~ nav label:nth-of-type(1) .progressbar-fill,
+  #section-1 #banner2:checked ~ nav label:nth-of-type(2) .progressbar-fill,
+  #section-1 #banner3:checked ~ nav label:nth-of-type(3) .progressbar-fill,
+  #section-1 #banner4:checked ~ nav label:nth-of-type(4) .progressbar-fill {
+    animation: progressBarFill 5s linear;
+  }
+  
+  /* Animations */
+  @keyframes progressBarFill {
+    from {
+      margin-left: -100%;
+    }
+    to {
+      margin-left: 0;
+    }
+  }
+  
+  /* Media Queries */
+  @media only screen and (min-width: 1920px) {
+    body {
+      font-size: 22px;
+    }
+    .main-header .header-wrapper {
+      width: 57%;
+    }
+    #section-1 {
+      height: 46em;
+    }
+    #section-1 .content-slider .slider .banner .banner-inner-wrapper {
+      padding-top: 12em;
+    }
+  }
+  
+  @media only screen and (max-width: 1919px) {
+    body {
+      font-size: 20px;
+    }
+    .main-header .header-wrapper {
+      width: 60%;
+    }
+    #section-1 {
+      height: 43em;
+    }
+    #section-1 .content-slider .slider .banner .banner-inner-wrapper {
+      padding-top: 11em;
+    }
+  }
+  
+  @media only screen and (max-width: 1680px) {
+    body {
+      font-size: 18px;
+    }
+    .main-header .header-wrapper {
+      width: 65%;
+    }
+    #section-1 {
+      height: 40em;
+    }
+    #section-1 .content-slider .slider .banner .banner-inner-wrapper {
+      padding-top: 9em;
+    }
+  }
+  
+  @media only screen and (max-width: 1366px) {
+    body {
+      font-size: 16px;
+    }
+    .main-header .header-wrapper {
+      width: 70%;
+    }
+  }
+  
+  @media only screen and (max-width: 1120px) {
+    .main-header .header-wrapper .main-menu li {
+      padding: 0.75em 1.4em;
+    }
+    #section-1 {
+      height: 35em;
+    }
+    #section-1 .content-slider nav {
+      bottom: -0.2em;
+    }
+    #section-1 .content-slider .slider .banner .banner-inner-wrapper {
+      padding-top: 7em;
+    }
+    #section-1 .content-slider .slider .banner .banner-inner-wrapper .line {
+      margin: 2em auto;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    body {
+      font-size: 14px;
+    }
+    .main-header .header-wrapper .main-menu li {
+      padding: 0.75em 1.3em;
+    }
+    #section-1 .content-slider nav {
+      bottom: 0;
+    }
+    #section-1 .content-slider nav .controls {
+      width: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 860px) {
+    .main-header .header-wrapper .main-menu li {
+      padding: 0.75em 0.9em;
+    }
+    #section-1 {
+      height: 29em;
+    }
+    #section-1 .content-slider nav {
+      bottom: -1em;
+    }
+}
+#section-1 .content-slider nav .controls {
+    width: 90%;
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
+    font-size: 2em;
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper h1 {
+    font-size: 4.5em;
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper {
+    padding-top: 5em;
+  }
+
+
+@media only screen and (max-width: 768px) {
+  .main-header .header-wrapper .main-menu li {
+    padding: 0.75em 0.5em;
+  }
+  #section-1 {
+    height: 27em;
+  }
+  #section-1 .content-slider nav .controls {
+    width: 100%;
+  }
+  #section-1 .content-slider nav .controls label {
+    width: 19%;
+    font-size: 0.8em;
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper .line {
+    margin: 1.7em auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .main-header .header-wrapper {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-header .header-wrapper {
+    width: 97%;
+  }
+  .main-header .header-wrapper .main-logo {
+    display: none;
+  }
+  .main-header .header-wrapper .main-menu li {
+    padding: 0.2em 0.3em;
+  }
+  .main-header .header-wrapper .main-menu li:last-child,
+  .main-header .header-wrapper .main-menu li:nth-child(6) {
+    padding: 0.2em 0.7em;
+  }
+  #section-1 {
+    height: 26em;
+  }
+  #section-1 .content-slider nav {
+    bottom: -0.5em;
+  }
+  #section-1 .content-slider nav .controls label {
+    width: 40%;
+    font-size: 0.7em;
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
+    font-size: 1.5em;
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper h1 {
+    font-size: 3em;
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper .line {
+    margin: 1.7em auto;
+  }
+}
+
+
+
+
+/* IDEA 2 */
+.car{
+    width: 100%;
+}
+.h1car{
+    margin-top: 600px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-shadow: 5px 5px 5px#000000;
+
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.slide-btn {
+    display: none;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+.slide {
+    float: left;
+    height: 100%;
+    width: 0;
+    transition: width .3s linear;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.slide > * {
+    transition: transform .15s linear;
+    transform: scale(0);
+}
+.labels {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.labels label {
+    display: inline-block;
+    background-color: rgb(19, 122, 219);
+    width: 15px;
+    height: 15px;
+    border-radius: 25px;
+    margin: .5vmin 2vmin;
+    border: 1px solid rgb(19, 122, 219);
+}
+.carousel .one,
+.carousel .two,
+.carousel .three,
+.carousel .four{
+    background-position: center center;
+    background-size: cover;
+}
+.carousel .one {
+    background-image: url("/assets/hero1.png");
+}
+.carousel .two {
+    background-image: url("/assets/hero2.png");
+}
+.carousel .three {
+    background-image: url("/assets/hero3.png");
+}
+.carousel .four {
+    background-image: url("/assets/hero4.png");
+}
+
+#slide-btn-1:checked ~ .one,
+#slide-btn-2:checked ~ .two,
+#slide-btn-3:checked ~ .three,
+#slide-btn-4:checked ~ .four{
+    width: 100%;
+}
+#slide-btn-1:checked ~ .one > *,
+#slide-btn-2:checked ~ .two > *,
+#slide-btn-3:checked ~ .three > *,
+#slide-btn-4:checked ~ .four > *{
+    transform: scale(1);
+}
+#slide-btn-1:checked ~ .labels label[for="slide-btn-1"],
+#slide-btn-2:checked ~ .labels label[for="slide-btn-2"],
+#slide-btn-3:checked ~ .labels label[for="slide-btn-3"],
+#slide-btn-4:checked ~ .labels label[for="slide-btn-4"]{
+    background-color: white;
+}
+
+
+
+
+
+
+
+/* IDEA 1 */
+.hero {
+  width: 100%;
+  height: 900px;
+  background: #0000006e;
+  padding: 0;
+}
+
+.slide-show-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+/* CSS Styles in common for all slides */
+.wrapper-one,
+.wrapper-two,
+.wrapper-three,
+.wrapper-four {
+  background-color: #eee;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* CSS Styles for each slide */
+/* Just add the image as background attribute and add some animation */
+
+.wrapper-one {
+    background-image: url("/assets/hero1.png");
+}
+
+.wrapper-two {
+    background-image: url("/assets/hero2.png");
+  animation: slideTwoAnim 20s infinite;
+}
+
+.wrapper-three {
+    background-image: url("/assets/hero3.png");
+  animation: slideThreeAnim 20s infinite;
+}
+.wrapper-four {
+    background-image: url("/assets/hero4.png");
+  animation: slideThreeAnim 20s infinite;
+}
+/* Styles for the text */
+.wrapper-text {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 700px;
+  text-shadow: 5px 5px 5px #000000;
+}
+
+/* Animations */
+@keyframes slideTwoAnim {
+    0%{opacity:0;}
+    17%{opacity:0;}
+    33%{opacity:1;}
+    50%{opacity:1;}
+    67%{opacity:0;}
+    100%{opacity:0;}
+}
+
+@keyframes slideThreeAnim {
+    0%{opacity:0;}
+    50%{opacity:0;}
+    67%{opacity:1;}
+    83%{opacity:1;}
+    100%{opacity:0;}
+}
+@keyframes slideFourAnim {
+    0%{opacity:0;}
+    50%{opacity:0;}
+    67%{opacity:1;}
+    83%{opacity:1;}
+    100%{opacity:0;}
+}
+
+
 /*------------------------------ Preloader CSS --------------------------------*/
 .preloader-v9 { animation-delay: 1s; width: 100vw; height: 100vh; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; align-content: center; position: fixed; top: 0; left: 0; z-index: 9999999; background-color: var(--dark-color-2); overflow: hidden; }
 .preloader-v9 .sub-preloader-v9 { width: 120px; height: 120px; display: flex; justify-content: center; align-items: center; overflow: hidden; }
@@ -1205,7 +1849,7 @@ button { border: none; outline: none; box-shadow: none; background: none; }
     .homepage-v9-slider-slicknavholdercustom::after { width: 113px; height: 113px; }
     .homepage-v9-banner-slider-content-box { margin-top: 110px; padding: 38px 0 0 30px; }
     .homepage-v9-banner-slider-title { font-size: 60px; line-height: 60px; }
-    .homepage-v9-banner-slider-bgcolorbox { width: 240px; height: 250px; }
+    .homepage-v9-banner-slider-bgcolorbox { width: 327px; height: 250px; }
     .homepage-v9-banner-slider-bgcolorbox::after { width: 146px; height: 146px; }
     .homepage-v9-banner-slider .slick-dots { bottom: 5px; }
     .homepage-v9-banner-slider .slick-dots li,.homepage-v9-banner-slider .slick-dots li button,.homepage-v9-banner-slider .slick-dots li button::before { width: 45px; }
@@ -1859,7 +2503,7 @@ button { border: none; outline: none; box-shadow: none; background: none; }
 .our-clients-say-sub-desc { margin: 0; padding: 0; font-weight: 400; font-size: 24px; color: var(--white-color-1); font-family: 'Open Sans', sans-serif; }
 
 /*------------------------------ About Page v2 Our Brand Logo CSS --------------------------------*/
-.aboutpage-v2-our-brand-logo { margin: 0 45px !important; }
+.aboutpage-v2-our-brand-logo { margin: 0 45px; }
 .customer-logos-2 { margin: 0; padding: 0 46px; }
 .customer-logos-2 .slide { margin: 0 80px; padding: 0; }
 .customer-logos-2 .slide .image-container { height: 92px; max-width: 334px; display: flex; align-items: center; justify-content: center; text-align: center; }
@@ -1949,7 +2593,7 @@ button { border: none; outline: none; box-shadow: none; background: none; }
     .meet-our-leaders-img { width: 210px; height: 210px; }
     .meet-our-leaders-content-title { font-size: 16px; }
     .meet-our-leaders-content-sub-desc { font-size: 14px; }
-    .aboutpage-v2-our-brand-logo { margin: 0 25px !important; }
+    .aboutpage-v2-our-brand-logo { margin: 0 25px; }
     .our-clients-say-slidermain { margin: 25px 25px 0 25px; padding: 30px 50px; }
     .our-clients-say-img { height: 524px; }
     .our-clients-say-text { padding: 140px 70px 0px 80px; }
