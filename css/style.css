@@ -318,7 +318,7 @@ button { border: none; outline: none; box-shadow: none; background: none; }
   #section-1 .content-slider .slider .banner .banner-inner-wrapper {
     height: 100%;
     padding-top: 6em;
-    background-image: linear-gradient(rgba(5, 22, 24, 0.364), rgba(50, 204, 255, 0.441));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.653), rgba(133, 133, 133, 0.441));
     box-sizing: border-box;
   }
   #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
