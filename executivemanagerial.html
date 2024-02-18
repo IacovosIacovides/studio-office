@@ -29,11 +29,11 @@
     </head>
     <body class="inner-page">
         <!-- Home Page v9 Preloader -->
-        <div class="preloader-v9">
+        <!-- <div class="preloader-v9">
             <div class="sub-preloader-v9">
                 <img src="images/homepage-v9-preloader.png" class="object-fit-cover w-100 h-100" alt="loading" />
             </div>
-        </div>
+        </div> -->
         <!-- Home Page v9 Preloader -->
 
       <!-- HomePage v9 Header -->
@@ -198,23 +198,25 @@
             <div class="toolbox-right"> 
             </div>
         </div>
-        <div class="container">
+        <div class="container" >
             <div class="row">
               <div class="col-md-12">
                 <div id="myBtnContainer">
                     <div class="btn-group" role="group">
-                        <button class="btn active" onclick="filterSelection('all')">All</button>
+                
                         <!-- Add other filters as needed -->
                 
                         <!-- Custom Dropdown for Mobile -->
                         <div class="custom-dropdown">
-                            <button class="btn">Filters</button>
+                            <div style="background-color: rgba(255, 255, 255, 0.892); border-radius: 10px; height: 3em; width: 70px; display: flex; align-content: center; justify-content: center; align-items: center;">Filters</div>
                             <div class="dropdown-content">
-                                <a class="dropdown-item" href="#" onclick="filterSelection('interstuhl')">Interstuhl</a>
-                                <a class="dropdown-item" href="#" onclick="filterSelection('wilkhahn')">Wilkhahn</a>
-                                <a class="dropdown-item" href="#" onclick="filterSelection('las')">Las</a>
-                                <a class="dropdown-item" href="#" onclick="filterSelection('herman')">Herman Miller</a>
-                                <a class="dropdown-item" href="#" onclick="filterSelection('studio')">Studio Office</a>
+                                <button class="btn active" onclick="filterSelection('all')" style="height: 70px;">Remove Filtering</button>
+                                <button class="btn" onclick="filterSelection('alea')"> <img src="assets/alea.png" style="height: 30px; width: auto;"></button>
+                                <button class="btn" onclick="filterSelection('wilkhahn')">  <img src="assets/wilkhanh.png" style="height: 30px; width: auto;"></button>
+                                <button class="btn" onclick="filterSelection('las')">  <img src="assets/las.png" style="height: 30px; width: auto;"></button>
+                                <button class="btn" onclick="filterSelection('herman')"> <img src="assets/HermanMiller.jpeg" style="height: 30px; width: auto;"></button>
+                                <button class="btn" onclick="filterSelection('studio')"> <img src="assets/studio-office-logo.png" style="height: 30px; width: auto;"></button>
+                                <button class="btn" onclick="filterSelection('inter')"> <img src="assets/inter.png" style="height: 30px; width: auto;"></button>
                             </div>
                         </div>
                     </div>
