@@ -282,6 +282,10 @@ button { border: none; outline: none; box-shadow: none; background: none; }
     font-size: 1.2em;
   }
   
+
+
+
+  
   /* Section-1 Styles */
   #section-1 {
     height: 38em;
@@ -2448,7 +2452,7 @@ a {
 
 
 /*------------------------------ About Page v2 Our Story CSS --------------------------------*/
-.our-story-detail { margin: 150px 0 0 0; padding: 100px 66px 84px 70px; background-color: rgb(255, 255, 255); width: 532px; box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.06); }
+.our-story-detail { margin: 150px 0 0 0; padding: 100px 66px 84px 70px; background-color: rgba(255, 255, 255, 0.619); width: 532px; box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.06); }
 .our-story-text-one { margin: 27px 0 0 0; padding: 0; font-size: 20px; font-weight: 600; color: var(--black-color-2); line-height: 30px; font-family: 'Jost', sans-serif; }
 .our-story-text { margin: 33px 0 0 0; padding: 0; font-weight: 400; font-size: 16px; color: var(--black-color-2); line-height: 30px; }
 .our-story-img { margin: 0; padding: 0; width: 644px; height: 795px; overflow: hidden; }
