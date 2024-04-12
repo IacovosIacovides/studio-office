@@ -2203,7 +2203,7 @@ a {
 .aboutpage-v1-innerpage-breadcrumb .breadcrumb-item.active { margin: 0; padding: 0; font-size: 17px; font-weight: 400; color: var(--green-color-3); font-family: 'Open Sans', sans-serif; }
 .aboutpage-v1-innerpage-breadcrumb .breadcrumb-item::before { padding-right: 10px; color: var(--white-color); font-size: 1rem; font-family: 'Open Sans', sans-serif; }
 
-/*------------------------------ About Page v1 Who Are We Welcome To Regalia CSS --------------------------------*/
+/*------------------------------ About Page v1 Who Are We Welcome To  CSS --------------------------------*/
 .aboutpage-v1-whoarewe { position: relative; }
 .whoarewe-text-one { margin: 36px 0 31px 0; padding: 0; font-size: 20px; font-weight: 600; color: var(--black-color-2); line-height: 30px; font-family: 'Jost', sans-serif; }
 .whoarewe-text { margin: 0 0 36px 0; padding: 0; font-weight: 400; font-size: 16px; color: var(--black-color-2); line-height: 30px; }
