@@ -2212,6 +2212,68 @@ a {
 .whoarewe-point li:after { left: 0; top: 0px; color: var(--green-color-3); font-size: 12px; content: "\f111"; font-weight: 400; position: absolute; font-family: "Font Awesome 5 Free"; }
 .about-whoarewe-img-wrapper { margin: 0; padding: 0; width: 696px; height: 525px; overflow: hidden; }
 
+
+
+
+/* BRANDS BANNER */
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+  
+  /* .logos:hover .logos-slide {
+    animation-play-state: paused;
+  } */
+  
+  .logos-slide {
+    display: inline-block;
+    animation: 15s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 90px;
+    margin: 0 40px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease; /* Add a smooth transition */
+  
+  }
+  .logos-slide img:hover {
+    filter: grayscale(0%);
+  }
+
+
 /*------------------------------ About Page v1 Count Area CSS --------------------------------*/
 .aboutpage-v1-countarea { margin: 0; text-align: center; }
 .countarea-box1 { margin: 0; padding: 50px; background-color: var(--white-color); }
