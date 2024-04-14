@@ -2235,7 +2235,7 @@ a {
 .brand-wrap1 .our-clients-popular-brands-logo-img { padding: 25px; margin: 0; box-shadow: 0 0 20px 0 rgba(0,0,0,0.05); height: 143px; max-width: 334px; display: flex; align-items: center; justify-content: center; }
 .brand-wrap1 img { filter: grayscale(100%); -webkit-transition: all 240ms ease-in-out; -moz-transition: all 240ms ease-in-out; -ms-transition: all 240ms ease-in-out; -o-transition: all 240ms ease-in-out; transition: all 240ms ease-in-out; }
 .brand-wrap1:hover img { filter: grayscale(0); }
-
+.brandsbanner { padding: 25px; margin: 0; box-shadow: 0 0 20px 0 rgba(0,0,0,0.05); height: 143px; max-width: 334px; display: flex; align-items: center; justify-content: center; }
 /*------------------------------ About Page v1 Happy Customer and Our Store CSS --------------------------------*/
 .happycustomer-and-ourstore-box1 { margin-right: 28px; }
 .happycustomer-and-ourstore-box2 { margin-left: 28px; }
