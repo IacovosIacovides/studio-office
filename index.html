@@ -172,8 +172,8 @@
 
         <!-- Home Page v9 Banner Slider -->
 
-        <!-- IDEA 3-->
-        <div class="header-wrapper">
+        <!-- IDEA 4-->
+        <!-- <div class="header-wrapper">
             <section id="section-1">
               <div class="content-slider">
                 <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
@@ -195,7 +195,7 @@
                   </div>
                   <div id="top-banner-3" class="banner">
                     <div class="banner-inner-wrapper">
-                      <!-- Replace img with video -->
+                 
                       <video id="worldwide-exports-video" class="object-fit-cover w-100 h-100" autoplay muted loop controls>
                         <source src="homehero2/shipping-export-inland-worldwide-exports_2oGOHcZT.mp4" type="video/mp4">
                       </video>
@@ -204,8 +204,8 @@
                   </div>
                   <div id="top-banner-4" class="banner">
                     <div class="banner-inner-wrapper">
-                      <!-- Replace img with video -->
-                      <video id="custom-designs-video" class="object-fit-cover w-100 h-100" autoplay muted loop controls>
+                      
+                    <video id="custom-designs-video" class="object-fit-cover w-100 h-100" autoplay muted loop controls>
                         <source src="homehero1/custom-designs_1u55TCPf.mp4" type="video/mp4">
                       </video>
                       <div class="line"></div>
@@ -222,10 +222,52 @@
                 </nav>
               </div>
             </section>
-          </div>
+          </div> -->
           
-          
-
+          <!--Idea 3-->
+          <div class="header-wrapper">
+            <section id="section-1">
+              <div class="content-slider">
+                <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
+                <input type="radio" id="banner2" class="sec-1-input" name="banner">
+                <input type="radio" id="banner3" class="sec-1-input" name="banner">
+                <input type="radio" id="banner4" class="sec-1-input" name="banner">
+                <div class="slider">
+                  <div id="top-banner-1" class="banner">
+                    <div class="banner-inner-wrapper">
+                      <h1 class="carh1">Office<br>Furniture</h1>
+                      <div class="line"></div>
+                    </div>
+                  </div>
+                  <div id="top-banner-2" class="banner">
+                    <div class="banner-inner-wrapper">
+                      <h1 class="carh1">Imported<br>Furniture</h1>
+                      <div class="line"></div>
+                    </div>
+                  </div>
+                  <div id="top-banner-3" class="banner">
+                    <div class="banner-inner-wrapper">
+                        <h1 class="carh1">Worldwide<br>Exports</h1>
+                      <div class="line"></div>
+                    </div>
+                  </div>
+                  <div id="top-banner-4" class="banner">
+                    <div class="banner-inner-wrapper">
+                        <h1 class="carh1">Custom<br>Designs</h1>
+                      <div class="line"></div>
+                    </div>
+                  </div>
+                </div>
+                <nav>
+                  <div class="controls">
+                    <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span><span>01</span> Office Furniture</label>
+                    <label for="banner2"><span class="progressbar"><span class="progressbar-fill"></span></span><span>02</span> Imported Furniture</label>
+                    <label for="banner3"><span class="progressbar"><span class="progressbar-fill"></span></span><span>03</span> Worldwide Exports</label>
+                    <label for="banner4"><span class="progressbar"><span class="progressbar-fill"></span></span><span>04</span> Custom Designs</label>
+                  </div>
+                </nav>
+              </div>
+            </section>
 
 
 
@@ -618,7 +660,7 @@
                     <div class="col-lg-7 col-md-7 col-sm-12 our-story-img-main">
                         <div class="our-story-img float-end">
                             <!-- Replace img with video -->
-                            <video src="factoryhome/factory.mp4" class="object-fit-cover w-100 h-100" style="margin-left: 40px !important;" autoplay muted loop controls></video>
+                            <img src="assets/factory.png" class="object-fit-cover w-100 h-100" alt="About us" />
                         </div>
                     </div>
                 </div>
@@ -883,8 +925,8 @@
                                 <li><a href="about-v1.html" class="nav-link"><i class="fas fa-angle-right"></i>About</a></li>
                                 <li><a href="contact-us-v1.html" class="nav-link"><i class="fas fa-angle-right"></i>Contact</a></li>
                                 <!-- <li><a href="faq.html" class="nav-link"><i class="fas fa-angle-right"></i>Faq</a></li> -->
-                                <li><a href="login.html" class="nav-link"><i class="fas fa-angle-right"></i>Services</a></li>
-                                <li><a href="register.html" class="nav-link"><i class="fas fa-angle-right"></i>Job Opportunities</a></li>
+                                <li><a href="services.html" class="nav-link"><i class="fas fa-angle-right"></i>Services</a></li>
+                                <li><a href="jobs.html" class="nav-link"><i class="fas fa-angle-right"></i>Job Opportunities</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-4 footer-widget-ourinformation-9">
@@ -1059,11 +1101,11 @@ var int;
   }
 }
 
-var bannerTimer = setInterval(bannerSwitcher, 10000);
+var bannerTimer = setInterval(bannerSwitcher, 5000);
 
 $('nav .controls label').click(function() {
   clearInterval(bannerTimer);
-  bannerTimer = setInterval(bannerSwitcher, 10000);
+  bannerTimer = setInterval(bannerSwitcher, 5000);
 });
 
 // Function to handle video autoplay and switching to the next banner after video ends
