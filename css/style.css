@@ -841,7 +841,7 @@ a {
 
 
 /*------------------------------ Preloader CSS --------------------------------*/
-.preloader-v9 { animation-delay: 1s; width: 100vw; height: 100vh; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; align-content: center; position: fixed; top: 0; left: 0; z-index: 9999999; background-color: var(--dark-color-2); overflow: hidden; }
+.preloader-v9 { animation-delay: 1s; width: 100vw; height: 100vh; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; align-content: center; position: fixed; top: 0; left: 0; z-index: 9999999; background-color: white; overflow: hidden; }
 .preloader-v9 .sub-preloader-v9 { width: 120px; height: 120px; display: flex; justify-content: center; align-items: center; overflow: hidden; }
 .preloader-v9 .sub-preloader-v9 img { background-size: cover; animation: spin 1s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
@@ -1092,7 +1092,7 @@ a {
 .header-v9 { background: none; margin: 0; padding: 23px 0 22px 0; -webkit-transition: all 240ms ease-in-out; -moz-transition: all 240ms ease-in-out; -ms-transition: all 240ms ease-in-out; -o-transition: all 240ms ease-in-out; transition: all 240ms ease-in-out; }
 .stickyNav .header-v9 .navbar-brand { height: 42px; width: 107px; -webkit-transition: all 240ms ease-in-out; -moz-transition: all 240ms ease-in-out; -ms-transition: all 240ms ease-in-out; -o-transition: all 240ms ease-in-out; transition: all 240ms ease-in-out; }
 .homev9-nav-link { color: var(--black-color-22) !important; font-size: 18px; font-weight: 500; border-bottom: 1px solid; border-color: transparent; padding: 14px 21px !important; margin-top: -1px; }
-.homev9-nav-link.active, .homev9-nav-link:hover { color: var(--black-color-22) !important; }
+.homev9-nav-link.active, .homev9-nav-link:hover { color: #2576B9 !important; }
 .homev9-nav-link.show .fa-angle-down { transform: rotate(180deg); }
 .homev9-nav-link:hover{
     color: #1561b7 !important;

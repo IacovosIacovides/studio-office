@@ -22,7 +22,24 @@
         <!-- Fancybox CSS -->
         <link href="css/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
         <!-- Style CSS -->
-        <link href="css/style.css" rel="stylesheet" type="text/css" />       
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <style>
+        #button3 {
+            cursor: pointer;
+            background-color: transparent;
+            transition: 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
+            box-shadow: 0 0 0 rgba(70, 150, 240, 0), inset 0 0 0 rgba(70, 150, 240, 0);
+            border: 0 solid rgba(70, 150, 240, 0);
+            color: rgba(255, 255, 255, 1);
+        }
+
+        #button3:hover {
+            box-shadow: 0 0 15px 8px rgba(70, 150, 240, 0.4) inset, 0 0 15px 8px rgba(70, 150, 240, 0.4);
+            border: 2px solid rgba(70, 150, 240, 1);
+            color: rgba(255, 255, 255, 1);
+        }
+
+        </style>      
     </head>
     <body class="inner-page">
         <!-- Home Page v9 Preloader -->
@@ -65,14 +82,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="homev9-nav-link nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="homev9-nav-link nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown homev9-pages">
                             <a class="homev9-nav-link nav-link dropdown-toggle" href="about.html" role="button" data-bs-auto-close="outside" aria-expanded="false"> About Us </a>
                            
                         </li>
                         <li class="nav-item dropdown homev9-pages">
-                            <a class="homev9-nav-link nav-link dropdown-toggle" href="products.html" role="button" data-bs-auto-close="outside" aria-expanded="false"> Products</a>
+                            <a class="homev9-nav-link nav-link dropdown-toggle active" href="products.html" role="button" data-bs-auto-close="outside" aria-expanded="false"> Products</a>
                             <ul class="dropdown-menu">
                                 <li class="dropend">
                                   
@@ -193,8 +210,8 @@
             <div class="toolbox-right"> 
             </div>
         </div>
-        <div class="row m-b-36">
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+        <div class="row m-b-36" style="margin-right: 15px;">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -205,15 +222,11 @@
                         <h4 class="stores-listing-page-store-title">
                             <a href="chairs.html">Chairs</a></h4>
                     
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our collections of chairs</span>
-                            </li>
+                        
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -223,18 +236,12 @@
                     <div class="stores-listing-page-store-content">
                         <h4 class="stores-listing-page-store-title">
                             <a href="conference.html">Conferences and Seminars</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our conference and Seminar furniture</span>
-                            </li>
-                            <li class="stores-listing-page-description">
-                        </ul>
+                       
                     </div>
                 </div>
             </div>
             
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -244,16 +251,11 @@
                     <div class="stores-listing-page-store-content">
                         <h4 class="stores-listing-page-store-title">
                             <a href="reception.html">Receptions</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our reception furniture</span>
-                            </li>
-                        </ul>
+                       
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4"  id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -262,17 +264,12 @@
                     </div>
                     <div class="stores-listing-page-store-content">
                         <h4 class="stores-listing-page-store-title">
-                            <a href="storage.html">Storages</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our storage furniture</span>
-                            </li>
-                        </ul>
+                            <a href="storage.html">Storage</a></h4>
+                       
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4"  id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -281,17 +278,12 @@
                     </div>
                     <div class="stores-listing-page-store-content">
                        <h4 class="stores-listing-page-store-title">
-                        <a href="offices.html">Offices</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our office furniture</span>
-                            </li>
-                        </ul>
+                        <a href="offices.html">Desks</a></h4>
+                       
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -300,17 +292,12 @@
                     </div>
                     <div class="stores-listing-page-store-content">
                        <h4 class="stores-listing-page-store-title">
-                        <a href="partioning.html">Partitionings</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our Partitioning systems</span>
-                            </li>
-                        </ul>
+                        <a href="partioning.html">Partitioning</a></h4>
+                       
                     </div>
                 </div>
             </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -320,16 +307,11 @@
                     <div class="stores-listing-page-store-content">
                        <h4 class="stores-listing-page-store-title">
                         <a href="theatre.html">Cinema & Theatre Sittings</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our theatre sitting furniture</span>
-                            </li>
-                        </ul>
+                        
                     </div>
                 </div>
             </div>    
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -339,16 +321,11 @@
                     <div class="stores-listing-page-store-content">
                        <h4 class="stores-listing-page-store-title">
                         <a href="officeaccessories.html">Office Accessories</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our Office Accessories</span>
-                            </li>
-                        </ul>
+                        
                     </div>
                 </div>
             </div>  
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -358,16 +335,11 @@
                     <div class="stores-listing-page-store-content">
                        <h4 class="stores-listing-page-store-title">
                         <a href="safeoffice.html">Products for safe office environment</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our products for a safer office environment</span>
-                            </li>
-                        </ul>
+                        
                     </div>
                 </div>
             </div>      
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -377,15 +349,10 @@
                     <div class="stores-listing-page-store-content">
                         <h4 class="stores-listing-page-store-title">
                             <a href="safeoffice.html">Michalleneous</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our Michalleneous products.</span>
-                            </li>
-                        </ul>
+                        
                     </div>
                 </div>
-            </div>      <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            </div>      <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -395,16 +362,11 @@
                     <div class="stores-listing-page-store-content">
                        <h4 class="stores-listing-page-store-title">
                         <a href="theatre.html">Booths</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our Booths</span>
-                            </li>
-                        </ul>
+                       
                     </div>
                 </div>
             </div>       
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -414,17 +376,12 @@
                     <div class="stores-listing-page-store-content">
                        <h4 class="stores-listing-page-store-title">
                         <a href="greenwalls.html">Green Walls</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our Green Walls</span>
-                            </li>
-                        </ul>
+                       
                     </div>
                 </div>
             </div>      
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
-                <div class="store stores-listing-page-store-grid">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
+                <div class="store stores-listing-page-store-grid" >
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
                             <a href="acoustics.html"><img src="assets/Optimized-Acoustics.jpg" class="object-fit-cover w-100 h-100" alt="product" /></a>
@@ -433,16 +390,11 @@
                     <div class="stores-listing-page-store-content">
                        <h4 class="stores-listing-page-store-title">
                         <a href="acoustics.html">Acoustics</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our Acoustic Products</span>
-                            </li>
-                        </ul>
+                       
                     </div>
                 </div>
             </div>      
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -451,16 +403,11 @@
                     </div>
                     <div class="stores-listing-page-store-content">
                        <h4 class="stores-listing-page-store-title">
-                        <a href="sports.html">Sports and Stagings</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our Sports and Staging Products</span>
-                            </li>
-                        </ul>
+                        <a href="sports.html">Sports & Staging</a></h4>
+                        
                     </div>
                 </div>
-            </div>   <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            </div>   <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -469,17 +416,12 @@
                     </div>
                     <div class="stores-listing-page-store-content">
                        <h4 class="stores-listing-page-store-title">
-                        <a href="urban.html">Urban furnitures</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our Urban furniture</span>
-                            </li>
-                        </ul>
+                        <a href="urban.html">Urban Furniture</a></h4>
+                       
                     </div>
                 </div>
             </div>      
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -488,17 +430,12 @@
                     </div>
                     <div class="stores-listing-page-store-content">
                        <h4 class="stores-listing-page-store-title">
-                        <a href="hospitality.html">Hospitality furnitures</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our Hospitality furntiture</span>
-                            </li>
-                        </ul>
+                        <a href="hospitality.html">Hospitality furniture</a></h4>
+                       
                     </div>
                 </div>
             </div>      
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -508,16 +445,11 @@
                     <div class="stores-listing-page-store-content">
                        <h4 class="stores-listing-page-store-title">
                         <a href="education.html">Education</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our Education products</span>
-                            </li>
-                        </ul>
+                       
                     </div>
                 </div>
             </div>      
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -526,17 +458,12 @@
                     </div>
                     <div class="stores-listing-page-store-content">
                        <h4 class="stores-listing-page-store-title">
-                        <a href="laboratories.html">laboratories</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our Laboratories</span>
-                            </li>
-                        </ul>
+                        <a href="laboratories.html">Laboratories</a></h4>
+                       
                     </div>
                 </div>
             </div>      
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -545,17 +472,11 @@
                     </div>
                     <div class="stores-listing-page-store-content">
                        <h4 class="stores-listing-page-store-title">
-                        <a href="healthcare.html">Healthcare</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our Healthcare Products</span>
-                            </li>
-                        </ul>
+                        <a href="healthcare.html">Healthcare Products</a></h4>
                     </div>
                 </div>
             </div>      
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4">
+            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4" id="button3">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -564,13 +485,7 @@
                     </div>
                     <div class="stores-listing-page-store-content">
                        <h4 class="stores-listing-page-store-title">
-                        <a href="metal.html">Metal furnitures</a></h4>
-                        <ul class="stores-listing-page-description-main">
-                            <li class="stores-listing-page-description">
-                                <i class="fas fa-circle"></i>
-                                <span>Browse our Metal furniture</span>
-                            </li>
-                        </ul>
+                        <a href="metal.html">Metal Furniture</a></h4>
                     </div>
                 </div>
             </div>            
