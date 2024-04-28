@@ -22,7 +22,7 @@
         <!-- Fancybox CSS -->
         <link href="css/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
         <!-- Style CSS -->
-        <link href="css/style.css" rel="stylesheet" type="text/css" />       
+        <link href="css/style.css" rel="stylesheet" type="text/css" />     
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -202,25 +202,14 @@
             <div class="row">
               <div class="col-md-12">
                 <div id="myBtnContainer">
-                    <div class="btn-group" role="group">
-                
-                        <!-- Add other filters as needed -->
-                
-                        <!-- Custom Dropdown for Mobile -->
-                        <div class="custom-dropdown">
-                            <div style="background-color: rgba(255, 255, 255, 0.892); border-radius: 10px; height: 3em; width: 70px; display: flex; align-content: center; justify-content: center; align-items: center;">Filters</div>
-                            <div class="dropdown-content">
-                                <button class="btn active" onclick="filterSelection('all')" style="height: 70px;">Remove Filtering</button>
-                                <button class="btn" onclick="filterSelection('alea')"> <img src="assets/alea.png" style="height: 30px; width: auto;"></button>
-                                <button class="btn" onclick="filterSelection('wilkhahn')">  <img src="assets/wilkhanh.png" style="height: 30px; width: auto;"></button>
-                                <button class="btn" onclick="filterSelection('las')">  <img src="assets/las.png" style="height: 30px; width: auto;"></button>
-                                <button class="btn" onclick="filterSelection('herman')"> <img src="assets/HermanMiller.jpeg" style="height: 30px; width: auto;"></button>
-                                <button class="btn" onclick="filterSelection('studio')"> <img src="assets/studio-office-logo.png" style="height: 30px; width: auto;"></button>
-                                <button class="btn" onclick="filterSelection('inter')"> <img src="assets/inter.png" style="height: 30px; width: auto;"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <button class="btn active" onclick="filterSelection('all')" data-style="all" style="height: 70px;"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    <button class="btn" onclick="filterSelection('alea')" data-style="alea"> <img src="assets/alea.png" style="height: 50px;"></button>
+                    <button class="btn" onclick="filterSelection('wilkhahn')" data-style="wilkhahn">  <img src="assets/wilkhanh.png" style="height: 50px;"></button>
+                    <button class="btn" onclick="filterSelection('las')" data-style="las">  <img src="assets/las.png" style="height: 50px;"></button>
+                    <button class="btn" onclick="filterSelection('herman')" data-style="herman"> <img src="assets/HermanMiller.jpeg" style="height: 50px;"></button>
+                    <button class="btn" onclick="filterSelection('studio')" data-style="studio"> <img src="assets/studio-office-logo.png" style="height: 50px;"></button>
+                    <button class="btn" onclick="filterSelection('inter')" data-style="inter"> <img src="assets/inter.jpg" style="height: 50px;"></button>
+                  </div>
               </div>
             </div>
           </div>
@@ -502,19 +491,6 @@
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
-                            <a href="champ.html"><img src="assets19/champ.jpeg" class="object-fit-cover w-100 h-100" alt="product" /></a>
-                        </figure>
-                    </div>
-                    <div class="stores-listing-page-store-content">
-                        <h4 class="stores-listing-page-store-title">
-                            <a href="champ.html">Champ</a></h4>
-                    </div>
-                </div>
-            </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv interstuhl">
-                <div class="store stores-listing-page-store-grid">
-                    <div class="stores-listing-page-store-header">
-                        <figure class="stores-listing-page-store-banner">
                             <a href="vintage.html"><img src="assets19/vintage.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
                         </figure>
                     </div>
@@ -780,7 +756,7 @@
                                  <li><a href="catalogues.html" class="nav-link"><i class="fas fa-angle-right"></i>Catalogues</a></li>
                                 <li><a href="clearance.html" class="nav-link"><i class="fas fa-angle-right"></i>Clearance</a></li>
                                 <li><a href="index.html" class="nav-link"><i class="fas fa-angle-right"></i>Home</a></li>
-                                <li><a href="about-v1.html" class="nav-link"><i class="fas fa-angle-right"></i>About</a></li>
+                                <li><a href="about.html" class="nav-link"><i class="fas fa-angle-right"></i>About</a></li>
                                 <li><a href="contact-us-v1.html" class="nav-link"><i class="fas fa-angle-right"></i>Contact</a></li>
                                 <!-- <li><a href="faq.html" class="nav-link"><i class="fas fa-angle-right"></i>Faq</a></li> -->
                                 <li><a href="services.html" class="nav-link"><i class="fas fa-angle-right"></i>Services</a></li>
@@ -803,7 +779,7 @@
                                 <li><a href="offices.html" class="nav-link"><i class="fas fa-angle-right"></i>Offices</a></li>
                                 <li><a href="conference.html" class="nav-link"><i class="fas fa-angle-right"></i>Conference</a></li>
                                 <li><a href="chairs.html" class="nav-link"><i class="fas fa-angle-right"></i>Chairs</a></li>
-                                <li><a href="seminar.html" class="nav-link"><i class="fas fa-angle-right"></i>Seminar</a></li>
+                                <li><a href="seminars.html" class="nav-link"><i class="fas fa-angle-right"></i>Seminar</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-4 footer-widget-storeinformation-9">

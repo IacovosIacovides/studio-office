@@ -196,14 +196,14 @@
             </div>
         </div>
         <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')">Remove Filtering</button>
-            <button class="btn" onclick="filterSelection('alea')"> Alea</button>
-            <button class="btn" onclick="filterSelection('wilkhahn')"> Wilkhahn</button>
-            <button class="btn" onclick="filterSelection('las')"> Las</button>
-            <button class="btn" onclick="filterSelection('herman')"> Herman Miller</button>
-            <button class="btn" onclick="filterSelection('studio')"> Studio Office</button>
-            <button class="btn" onclick="filterSelection('della')">Della Rovere</button>
-            <button class="btn" onclick="filterSelection('poflex')">Poflex</button>
+            <button class="btn active" onclick="filterSelection('all')" data-filter="all" style="height: 70px;"><i class="fa fa-times" aria-hidden="true"></i></button>
+            <button class="btn" onclick="filterSelection('alea')" data-filter="alea"> <img src="assets/alea.png" style="height: 50px;"></button>
+            <button class="btn" onclick="filterSelection('wilkhahn')" data-filter="wilkhahn"> <img src="assets/wilkhanh.png" style="height: 50px;"></button>
+            <button class="btn" onclick="filterSelection('las')" data-filter="las"> <img src="assets/las.png" style="height: 50px;"></button>
+            <button class="btn" onclick="filterSelection('herman')" data-filter="herman"> <img src="assets/HermanMiller.jpeg" style="height: 50px;"></button>
+            <button class="btn" onclick="filterSelection('studio')" data-filter="studio"> <img src="assets/studio-office-logo.png" style="height: 50px;"></button>
+            <button class="btn" onclick="filterSelection('della')" data-filter="della"><img src="asset/della.jpeg" style="height: 50px;"></button>
+            <button class="btn" onclick="filterSelection('poflex')" data-filter="poflex"><img src="asset/poflex.png" style="height: 50px;"></button>
           </div>
         <div class="row m-b-36">
             <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv wilkhahn">
@@ -310,19 +310,6 @@
                     </div>
                 </div>
             </div>    
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv alea">
-                <div class="store stores-listing-page-store-grid">
-                    <div class="stores-listing-page-store-header">
-                        <figure class="stores-listing-page-store-banner">
-                            <a href="oasimeetings.html"><img src="assets4/oasi.jpeg" class="object-fit-cover w-100 h-100" alt="product" /></a>
-                        </figure>
-                    </div>
-                    <div class="stores-listing-page-store-content">
-                       <h4 class="stores-listing-page-store-title">
-                        <a href="oasimeetings.html">Oasi</a></h4>
-                    </div>
-                </div>
-            </div>  
             <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
@@ -646,19 +633,7 @@
                     </div>
                 </div>
             </div>      
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
-                <div class="store stores-listing-page-store-grid">
-                    <div class="stores-listing-page-store-header">
-                        <figure class="stores-listing-page-store-banner">
-                            <a href="leadermeeting.html"><img src="assets4/leader.jpeg" class="object-fit-cover w-100 h-100" alt="product" /></a>
-                        </figure>
-                    </div>
-                    <div class="stores-listing-page-store-content">
-                        <h4 class="stores-listing-page-store-title">
-                            <a href="leadermeetings.html">Leader</a></h4>
-                    </div>
-                </div>
-            </div>      <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
+             <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
@@ -675,12 +650,12 @@
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
-                            <a href="cubicomeetings.html"><img src="assets4/cubico.jpeg" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                            <a href="cubico.html"><img src="assets4/cubico.jpeg" class="object-fit-cover w-100 h-100" alt="product" /></a>
                         </figure>
                     </div>
                     <div class="stores-listing-page-store-content">
                         <h4 class="stores-listing-page-store-title">
-                            <a href="cubicomeetings.html">Cubico</a></h4>
+                            <a href="cubico.html">Cubico</a></h4>
                     </div>
                 </div>
             </div>
@@ -848,7 +823,7 @@
                                  <li><a href="catalogues.html" class="nav-link"><i class="fas fa-angle-right"></i>Catalogues</a></li>
                                 <li><a href="clearance.html" class="nav-link"><i class="fas fa-angle-right"></i>Clearance</a></li>
                                 <li><a href="index.html" class="nav-link"><i class="fas fa-angle-right"></i>Home</a></li>
-                                <li><a href="about-v1.html" class="nav-link"><i class="fas fa-angle-right"></i>About</a></li>
+                                <li><a href="about.html" class="nav-link"><i class="fas fa-angle-right"></i>About</a></li>
                                 <li><a href="contact-us-v1.html" class="nav-link"><i class="fas fa-angle-right"></i>Contact</a></li>
                                 <!-- <li><a href="faq.html" class="nav-link"><i class="fas fa-angle-right"></i>Faq</a></li> -->
                                 <li><a href="services.html" class="nav-link"><i class="fas fa-angle-right"></i>Services</a></li>
@@ -871,7 +846,7 @@
                                 <li><a href="offices.html" class="nav-link"><i class="fas fa-angle-right"></i>Offices</a></li>
                                 <li><a href="conference.html" class="nav-link"><i class="fas fa-angle-right"></i>Conference</a></li>
                                 <li><a href="chairs.html" class="nav-link"><i class="fas fa-angle-right"></i>Chairs</a></li>
-                                <li><a href="seminar.html" class="nav-link"><i class="fas fa-angle-right"></i>Seminar</a></li>
+                                <li><a href="seminars.html" class="nav-link"><i class="fas fa-angle-right"></i>Seminar</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-4 footer-widget-storeinformation-9">

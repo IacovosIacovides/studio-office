@@ -22,7 +22,10 @@
         <!-- Fancybox CSS -->
         <link href="css/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
         <!-- Style CSS -->
-        <link href="css/style.css" rel="stylesheet" type="text/css" />       
+        <link href="css/style.css" rel="stylesheet" type="text/css" />   
+        <style>
+            
+        </style>    
     </head>
     <body class="inner-page">
         <!-- Home Page v9 Preloader -->
@@ -197,9 +200,9 @@
             </div>
         </div>
         <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')">Remove Filtering</button>
-            <button class="btn" onclick="filterSelection('las')"> Las</button>
-            <button class="btn" onclick="filterSelection('studio')"> Studio Office</button>
+            <button class="btn active" onclick="filterSelection('all')" data-filter="all" style="height: 70px;"><i class="fa fa-times" aria-hidden="true"></i></button>
+            <button class="btn" onclick="filterSelection('las')" data-filter="las"><img src="assets/las.png" style="height: 50px;"></button>
+            <button class="btn" onclick="filterSelection('studio')" data-filter="studio"><img src="assets/studio-office-logo.png" style="height: 50px;"></button>
           </div>
         <div class="row m-b-36">
             <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv las">
@@ -329,19 +332,6 @@
                     <div class="stores-listing-page-store-content">
                         <h4 class="stores-listing-page-store-title">
                             <a href="y017.html">Y017</a></h4>
-                    </div>
-                </div>
-            </div>
-            <div class="stores-listing-page-store-wrap col-lg-4 col-md-6 col-sm-6 mb-4 filterDiv studio">
-                <div class="store stores-listing-page-store-grid">
-                    <div class="stores-listing-page-store-header">
-                        <figure class="stores-listing-page-store-banner">
-                            <a href="y016.html"><img src="assets32/y016.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
-                        </figure>
-                    </div>
-                    <div class="stores-listing-page-store-content">
-                        <h4 class="stores-listing-page-store-title">
-                            <a href="y016.html">YO16</a></h4>
                     </div>
                 </div>
             </div>
@@ -493,7 +483,7 @@
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
-                            <a href="lc026.html"><img src="assets32/y016.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                            <a href="lc026.html"><img src="assets32/lc026.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
                         </figure>
                     </div>
                     <div class="stores-listing-page-store-content">
@@ -506,7 +496,7 @@
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
-                            <a href="lc025.html"><img src="assets32/y09.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                            <a href="lc025.html"><img src="assets32/lc025.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
                         </figure>
                     </div>
                     <div class="stores-listing-page-store-content">
@@ -519,7 +509,7 @@
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
-                            <a href="lc021.html"><img src="assets32/y05.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                            <a href="lc021.html"><img src="assets32/lc021.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
                         </figure>
                     </div>
                     <div class="stores-listing-page-store-content">
@@ -532,7 +522,7 @@
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
-                            <a href="lc020.html"><img src="assets32/y03-y04.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                            <a href="lc020.html"><img src="assets32/lc020.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
                         </figure>
                     </div>
                     <div class="stores-listing-page-store-content">
@@ -545,7 +535,7 @@
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
-                            <a href="lc019.html"><img src="assets32/y01-y02.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                            <a href="lc019.html"><img src="assets32/lc019.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
                         </figure>
                     </div>
                     <div class="stores-listing-page-store-content">
@@ -558,7 +548,7 @@
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
-                            <a href="lc014.html"><img src="assets32/lc053.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                            <a href="lc014.html"><img src="assets32/lc014.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
                         </figure>
                     </div>
                     <div class="stores-listing-page-store-content">
@@ -571,7 +561,7 @@
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
-                            <a href="lc011.html"><img src="assets32/lc052.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                            <a href="lc011.html"><img src="assets32/lc011.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
                         </figure>
                     </div>
                     <div class="stores-listing-page-store-content">
@@ -584,7 +574,7 @@
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
-                            <a href="lc010.html"><img src="assets32/lc038.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                            <a href="lc010.html"><img src="assets32/lc010.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
                         </figure>
                     </div>
                     <div class="stores-listing-page-store-content">
@@ -597,7 +587,7 @@
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
-                            <a href="lc009.html"><img src="assets32/lc032.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                            <a href="lc009.html"><img src="assets32/lc009.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
                         </figure>
                     </div>
                     <div class="stores-listing-page-store-content">
@@ -610,7 +600,7 @@
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
-                            <a href="lc008.html"><img src="assets32/lc031.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                            <a href="lc008.html"><img src="assets32/lc008.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
                         </figure>
                     </div>
                     <div class="stores-listing-page-store-content">
@@ -623,7 +613,7 @@
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
-                            <a href="lc007.html"><img src="assets32/lc028.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                            <a href="lc007.html"><img src="assets32/lc007.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
                         </figure>
                     </div>
                     <div class="stores-listing-page-store-content">
@@ -637,7 +627,7 @@
                 <div class="store stores-listing-page-store-grid">
                     <div class="stores-listing-page-store-header">
                         <figure class="stores-listing-page-store-banner">
-                            <a href="lc006.html"><img src="assets32/lc027.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
+                            <a href="lc006.html"><img src="assets32/lc006.png" class="object-fit-cover w-100 h-100" alt="product" /></a>
                         </figure>
                     </div>
                     <div class="stores-listing-page-store-content">
@@ -653,26 +643,6 @@
             </div>
         </div>
     </div>
-    <nav aria-label="Page navigation example" style="display: flex; justify-content: center;">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="coffee4.html" aria-label="Previous" style="font-size: 18px; font-weight: bold;">
-              <span aria-hidden="true">&laquo;</span>
-              <span class="sr-only">Previous</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="coffee.html"style="font-size: 18px; font-weight: bold;">1</a></li>
-          <li class="page-item"><a class="page-link" href="coffee2.html"style="font-size: 18px; font-weight: bold;">2</a></li>
-          <li class="page-item"><a class="page-link" href="coffee3.html"style="font-size: 18px; font-weight: bold;">3</a></li>
-          <li class="page-item"><a class="page-link" href="coffee4.html"style="font-size: 18px; font-weight: bold;">4</a></li>
-          <li class="page-item">
-            <a class="page-link" href="coffee2.html" aria-label="Next"style="font-size: 18px; font-weight: bold;">
-              <span aria-hidden="true">&raquo;</span>
-              <span class="sr-only">Next</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
 </section>
 
 <!-- Stores Listing Page Vendor -->
@@ -761,7 +731,7 @@
                                  <li><a href="catalogues.html" class="nav-link"><i class="fas fa-angle-right"></i>Catalogues</a></li>
                                 <li><a href="clearance.html" class="nav-link"><i class="fas fa-angle-right"></i>Clearance</a></li>
                                 <li><a href="index.html" class="nav-link"><i class="fas fa-angle-right"></i>Home</a></li>
-                                <li><a href="about-v1.html" class="nav-link"><i class="fas fa-angle-right"></i>About</a></li>
+                                <li><a href="about.html" class="nav-link"><i class="fas fa-angle-right"></i>About</a></li>
                                 <li><a href="contact-us-v1.html" class="nav-link"><i class="fas fa-angle-right"></i>Contact</a></li>
                                 <!-- <li><a href="faq.html" class="nav-link"><i class="fas fa-angle-right"></i>Faq</a></li> -->
                                 <li><a href="services.html" class="nav-link"><i class="fas fa-angle-right"></i>Services</a></li>
@@ -784,7 +754,7 @@
                                 <li><a href="offices.html" class="nav-link"><i class="fas fa-angle-right"></i>Offices</a></li>
                                 <li><a href="conference.html" class="nav-link"><i class="fas fa-angle-right"></i>Conference</a></li>
                                 <li><a href="chairs.html" class="nav-link"><i class="fas fa-angle-right"></i>Chairs</a></li>
-                                <li><a href="seminar.html" class="nav-link"><i class="fas fa-angle-right"></i>Seminar</a></li>
+                                <li><a href="seminars.html" class="nav-link"><i class="fas fa-angle-right"></i>Seminar</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-4 footer-widget-storeinformation-9">
